@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_posts/2024-11-18-What is PE?.md",
+                "file": "_tabs/about.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2024-11-18-What is PE?"
+              "title": "about"
             }
           },
           {
@@ -50,7 +50,8 @@
             "state": {
               "type": "file-explorer",
               "state": {
-                "sortOrder": "alphabetical"
+                "sortOrder": "alphabetical",
+                "autoReveal": false
               },
               "icon": "lucide-folder-closed",
               "title": "Files"
@@ -174,7 +175,18 @@
   },
   "active": "a9493dd3329c265b",
   "lastOpenFiles": [
+    "_tabs/archives.md",
+    "_tabs/about.md",
+    "_tabs/test.md",
+    "_site/test/index.html",
+    "_site/test",
+    "_site/tabs/test.md",
+    "_site/tabs/Untitled.md",
+    "_site/tabs",
     "_posts/2024-11-21-What is PE-1.md",
+    "_site/assets/images/pe.png",
+    "assets/images/pe.png",
+    "_posts/2024-11-18-What is PE?.md",
     "_site/assets/images/Pasted image 20241124010137.png",
     "_site/assets/images/Pasted image 20241124000102.png",
     "_site/assets/images/Pasted image 20241123205354.png",
@@ -183,10 +195,7 @@
     "assets/images/Pasted image 20241124000102.png",
     "assets/images/Pasted image 20241123205354.png",
     "assets/images/Pasted image 20241123205151.png",
-    "assets/images/Pasted image 20241122162748.png",
-    "assets/images/Pasted image 20241122181827.png",
     "_posts/2023-7-16-Claw.md",
-    "_posts/2024-11-18-What is PE?.md",
     "Untitled.md",
     "assets/images/Pasted image 20230604092109.png.md",
     "assets/images/Pasted image 20230605025946.png.md",
