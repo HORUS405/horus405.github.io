@@ -1,0 +1,5 @@
+git add .
+git commit -m "chore: prepare for final deployment"
+git push origin main
+bundle exec jekyll serve
+
