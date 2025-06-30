@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_posts/2025-6-28-n1njaShop v1.0-Web ChallengeWriteup — ICMTC 2025.md",
+                "file": "_tabs/Projects.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2025-6-28-n1njaShop v1.0-Web ChallengeWriteup — ICMTC 2025"
+              "title": "Projects"
             }
           }
         ]
@@ -94,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_posts/2025-6-28-n1njaShop v1.0-Web ChallengeWriteup — ICMTC 2025.md",
+                "file": "_tabs/Projects.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for 2025-6-28-n1njaShop v1.0-Web ChallengeWriteup — ICMTC 2025"
+              "title": "Backlinks for Projects"
             }
           },
           {
@@ -113,12 +113,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "_posts/2025-6-28-n1njaShop v1.0-Web ChallengeWriteup — ICMTC 2025.md",
+                "file": "_tabs/Projects.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from 2025-6-28-n1njaShop v1.0-Web ChallengeWriteup — ICMTC 2025"
+              "title": "Outgoing links from Projects"
             }
           },
           {
@@ -142,13 +142,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_posts/2025-6-28-n1njaShop v1.0-Web ChallengeWriteup — ICMTC 2025.md",
+                "file": "_tabs/Projects.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of 2025-6-28-n1njaShop v1.0-Web ChallengeWriteup — ICMTC 2025"
+              "title": "Outline of Projects"
             }
           }
         ]
@@ -170,6 +170,7 @@
   },
   "active": "d1dde2cb74fdb8fb",
   "lastOpenFiles": [
+    "_posts/2025-6-28-n1njaShop v1.0-Web ChallengeWriteup — ICMTC 2025.md",
     "_site/gitCommands.txt",
     "gitCommands.txt",
     "_site/posts/n1njaShop-v1.0-Web-ChallengeWriteup-ICMTC-2025/index.html",
@@ -179,7 +180,6 @@
     "_site/tags/web/index.html",
     "_site/tags/web",
     "_posts/2023-5-30-PC-Walkthrough.md",
-    "_posts/2025-6-28-n1njaShop v1.0-Web ChallengeWriteup — ICMTC 2025.md",
     "_posts/2023-7-10-Sau-Walkthrough.md",
     "_posts/2023-7-16-Claw.md",
     "assets/img/images/ictmp2025.jpg"
