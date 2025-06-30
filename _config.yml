@@ -17,7 +17,7 @@ timezone: Africa/Cairo
 # ↓ --------------------------
 title: Horus-405                          # the main title
 
-tagline: Horus Blog , i write for web and exploit development   # it will display as the sub-title
+tagline: CTF & Low level stuff   # it will display as the sub-title
 
 description: HORUS blog
 # fill in the protocol & hostname for your site, e.g., 'https://username.github.io'
