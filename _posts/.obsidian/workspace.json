@@ -1,0 +1,214 @@
+{
+  "main": {
+    "id": "d9c496ffb05fd4fa",
+    "type": "split",
+    "children": [
+      {
+        "id": "99d78f8a895fd39c",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "52d872818882184c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "2023-7-1-Stripped-and-Unstripped-Binaries.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "2023-7-1-Stripped-and-Unstripped-Binaries"
+            }
+          },
+          {
+            "id": "96820afe80b1a9e7",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "2024-11-21-What is PE.md.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "2024-11-21-What is PE.md"
+            }
+          }
+        ],
+        "currentTab": 1
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "c8c8a0b63da53f82",
+    "type": "split",
+    "children": [
+      {
+        "id": "802419b509aabab9",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "4084c4fc0a68b9fe",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "f7d03b9f124d5037",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "77903a89dd8686d6",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 200
+  },
+  "right": {
+    "id": "0a92b7a9a36ff9e4",
+    "type": "split",
+    "children": [
+      {
+        "id": "29e954f7e5a9a46e",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "fb5cc5d18ded5c40",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "2024-11-18-What is PE?.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for 2024-11-18-What is PE?"
+            }
+          },
+          {
+            "id": "37fddb8d6c65867a",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "2024-11-18-What is PE?.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from 2024-11-18-What is PE?"
+            }
+          },
+          {
+            "id": "5c7bb0a49b4991f0",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "169052cceb6c2182",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "2024-11-18-What is PE?.md"
+              },
+              "icon": "lucide-list",
+              "title": "Outline of 2024-11-18-What is PE?"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
+    }
+  },
+  "active": "96820afe80b1a9e7",
+  "lastOpenFiles": [
+    "2024-11-18-What is PE?.md",
+    "2023-7-1-Stripped-and-Unstripped-Binaries.md",
+    "2023-5-30-PC-Walkthrough.md",
+    "assets/images/Pasted image 20241119203044.png",
+    "assets/images/Pasted image 20241119202913.png",
+    "assets/images/Pasted image 20241119202706.png",
+    "assets/images/Pasted image 20241119201503.png",
+    "assets/images/Pasted image 20241119201006.png",
+    "assets/images/Pasted image 20241119195909.png",
+    "assets/images/Pasted image 20241119195424.png",
+    "assets/images/Pasted image 20241119183942.png",
+    "assets/images/Pasted image 20241119183131.png",
+    "2023-7-16-Claw.md",
+    "2023-7-10-Sau-Walkthrough.md",
+    "assets/images/Pasted image 20230605030057.png.md",
+    "assets/images/Pasted image 20230605025946.png.md",
+    "assets/images/Pasted image 20230604092109.png.md",
+    "assets/images",
+    "assets",
+    "Pasted image 20230604092109.png.md",
+    "Pasted image 20230605030057.png",
+    "assets/Writeup Template.md",
+    "Writeup Template.md",
+    "assets/images/Pasted image 20230530171443.png.md",
+    "assets/images/2023-02-02_21-49.jpg.md",
+    "2023-5-30-soccer.md",
+    "Untitled.canvas",
+    "2023-05-30.md",
+    "1.jpg.md",
+    "Images",
+    "Images/1.jpg.md"
+  ]
+}
