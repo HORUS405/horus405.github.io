@@ -7,42 +7,40 @@ theme: jekyll-theme-chirpy
 # If it has the same name as one of the files in folder `_data/locales`, the layout language will also be changed,
 # otherwise, the layout language will use the default value of 'en'.
 lang: en
+languages: ["en", "ar"] 
+
 
 # Change to your timezone › https://kevinnovak.github.io/Time-Zone-Picker
-timezone: Asia/Shanghai
+timezone: Africa/Cairo
 
 # jekyll-seo-tag settings › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
 # ↓ --------------------------
+title: Horus-405                          # the main title
 
-title: Chirpy # the main title
+tagline: Horus Blog , i write for web and exploit development   # it will display as the sub-title
 
-tagline: A text-focused Jekyll theme # it will display as the subtitle
-
-description: >- # used by seo meta and the atom feed
-  A minimal, responsive and feature-rich Jekyll theme for technical writing.
-
-# Fill in the protocol & hostname for your site.
-# E.g. 'https://username.github.io', note that it does not end with a '/'.
-url: ""
+description: HORUS blog
+# fill in the protocol & hostname for your site, e.g., 'https://username.github.io'
+url: 'https://horus405.github.io'
 
 github:
-  username: github_username # change to your GitHub username
+  username: HORUS405             # change to your github username
 
 twitter:
-  username: twitter_username # change to your Twitter username
+  username: Horus405            # change to your twitter username
 
 social:
   # Change to your full name.
   # It will be displayed as the default author of the posts and the copyright owner in the Footer
-  name: your_full_name
-  email: example@domain.com # change to your email address
+  name: Ahmed Khaled
+  email: ahmedkhaled201690@gmail.com             # change to your email address
   links:
     # The first element serves as the copyright owner's link
-    - https://twitter.com/username # change to your Twitter homepage
-    - https://github.com/username # change to your GitHub homepage
+    - https://twitter.com/username      # change to your twitter homepage
+    - https://github.com/username       # change to your github homepage
     # Uncomment below to add more social links
     # - https://www.facebook.com/username
-    # - https://www.linkedin.com/in/username
+    - https://www.linkedin.com/in/ahmed-khaled-6b018a207/
 
 # Site Verification Settings
 webmaster_verifications:
@@ -95,10 +93,10 @@ theme_mode: # [light | dark]
 # will be added to all media resources (site avatar, posts' images, audio and video files) paths starting with '/'
 #
 # e.g. 'https://cdn.com'
-cdn: "https://chirpy-img.netlify.app"
+
 
 # the avatar on sidebar, support local or CORS resources
-avatar: "/commons/avatar.jpg"
+avatar: "/assets/img/AoMR_Horus_artwork.png"
 
 # The URL of the site-wide social preview image used in SEO `og:image` meta tag.
 # It can be overridden by a customized `page.image` in front matter.

@@ -7,7 +7,7 @@ author: horus
 categories: [CTF]
 tags: [CTF,HackTheBox,Easy]
 comments: true
-image: main.png
+image: /assets/img/images/main.png
 --- 
 
 ## Introduction : 
@@ -53,27 +53,27 @@ I searched for *gRPC* on google to see if it have any CVES or vulnerabilities , 
 ## Exploitation (user.txt):
 I downloaded and installed tool called [`grpcui`](https://github.com/fullstorydev/grpcui) to interact with grpc and send requests.
 to run the tool we need to execute this command `grpcui -plaintext 10.10.11.214:50051` then after you run it ,it will provide you with url on you local machine to access the tool webpage and interact with `grpc` .
-![](/assets/images/Pasted%20image%2020230604092109.png)
+![](/assets/img/images/Pasted%20image%2020230604092109.png)
 it have one service and three method names :
 	- RegisterUser
 	- LoginUser
 	- getinfo
 
 * First i tried to register a user to test the functions 
-![](/assets/images/Pasted%20image%2020230604092652.png)
-* then i tried to login using the above credentials ,then this token showed up ![](/assets/images/Pasted%20image%2020230604092929.png)
+![](/assets/img/images/Pasted%20image%2020230604092652.png)
+* then i tried to login using the above credentials ,then this token showed up ![](/assets/img/images/Pasted%20image%2020230604092929.png)
 * then i tried to make a request in `getinfo` function to get info request for id `1`
-but the response was this ![](/assets/images/Pasted%20image%2020230604093401.png)
+but the response was this ![](/assets/img/images/Pasted%20image%2020230604093401.png)
 * i tried to put token header in the post request but it didn't work
 * then i tried to set name=`token` and value=`eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoiYWhtZWQiLCJleHAiOjE2ODU4NzM5NjF9.5stpokmr4tvpSgt76czT5TbbR-09zA9Nxs27sXEZmgI` in the request metadata and it worked.
-![](/assets/images/Pasted%20image%2020230604093943.png)
+![](/assets/img/images/Pasted%20image%2020230604093943.png)
 * after that i tried to test for `sql injection` on the id parameter using tool called `sqlmap`
 * i saves the whole request in file called `request.txt` , then i executed this command to test for sqli `sqlmap -r request.txt -p id` , the result was that it is vulnerable to sqli and it was using `sqllite` ,then i used this command to show the tables in the database `sqlmap -r request.txt -p id --tables`  and the result was that the database have only one table called `accounts`, i tried then to dump all the database but sqlmap didn't do well ,so i decided to retrieve the password and username manually.
-* i tried to dump password by this request ![](/assets/images/Pasted%20image%2020230604101322.png)
-* and username of this password by this request ![](/assets/images/Pasted%20image%2020230604101448.png)
+* i tried to dump password by this request ![](/assets/img/images/Pasted%20image%2020230604101322.png)
+* and username of this password by this request ![](/assets/img/images/Pasted%20image%2020230604101448.png)
 * next after i got these credentials ***username=sau*** and ***password=HereIsYourPassWord1431***
 -  i tried to login with it to ssh 
-- Booom i have gained foothold ladies and gentlemen ![](/assets/images/Pasted%20image%2020230605011804.png)
+- Booom i have gained foothold ladies and gentlemen ![](/assets/img/images/Pasted%20image%2020230605011804.png)
 - See you in the privilege escalation part ....
 
 ---
@@ -84,13 +84,13 @@ but the response was this ![](/assets/images/Pasted%20image%2020230604093401.png
 	`10.10.16.65` is my local ip on HTB vpn network .
 	The `chmod` command is used to change the permissions of a file or directory. The `+x` option specifies that the execute permission should be added.
 
-* when i was monitor the `linpeas.sh` output , i came across this![](/assets/images/Pasted%20image%2020230605014642.png)
-* there is two other ports are running localy on the `pc` machine `8000` , `9666`,  and there is python server that is runnig using `root` privilege and it properly run on port `8000` ![](/assets/images/Pasted%20image%2020230605015603.png)
+* when i was monitor the `linpeas.sh` output , i came across this![](/assets/img/images/Pasted%20image%2020230605014642.png)
+* there is two other ports are running localy on the `pc` machine `8000` , `9666`,  and there is python server that is runnig using `root` privilege and it properly run on port `8000` ![](/assets/img/images/Pasted%20image%2020230605015603.png)
 * so let's check it , it might be interesting to gain root privilege .
 * we can access this server on our local machine by using `port forwarding` technique , to do that we must execute this command on our local machine `ssh -L 8001:0.0.0.0:8000 sau@10.10.11.214` 
 	ssh -L `local_port`:`machine_local_ip`:`machine_port` `machine_user`@`machine_ip`
 
-- i visited `http:127.0.0.1:8001` on my local machine to see the service that is running on the `8000` and i also tried to access `9666` and they were running on the same service that called `pyload`.![](/assets/images/Pasted%20image%2020230605022042.png)
+- i visited `http:127.0.0.1:8001` on my local machine to see the service that is running on the `8000` and i also tried to access `9666` and they were running on the same service that called `pyload`.![](/assets/img/images/Pasted%20image%2020230605022042.png)
 	pyload : it is Free and Open Source download manager written in Python and designed to be extremely lightweight
 
 - i searched on google to see if this framework have any CVES , and i have found that it have a `Remote Code Execution (RCE)` vulnerability.
@@ -121,5 +121,5 @@ curl -i -s -k -X $'POST' \
 * lets fire the exploit and gain the root flag...
 
 ## Win : 
-* we have got the root flag ladies and gentlemen ![](/assets/images/Pasted%20image%2020230605025946.png)
+* we have got the root flag ladies and gentlemen ![](/assets/img/images/Pasted%20image%2020230605025946.png)
 

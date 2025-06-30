@@ -7,7 +7,7 @@ author: horus
 categories: [Binary_Exploitation]
 tags: [Binary_Exploitation , Arabic]
 comments: true
-image: 0x00.png
+image: /assets/img/images/0x00.png
 lang: ar
 ---
 
@@ -28,13 +28,13 @@ lang: ar
 ## Testing : 
 يلا نكتب كود بسيط جدا عشان نعرف بس الفرق بين الstripped و الunstripped و بيظهروا ازاي في الdisassembler ,
 ده الكود :  
-- ![](/assets/images/ray-so-export.png)
+- ![](/assets/img/images/ray-so-export.png)
 
 بعد ما كتبناه يلا نعمله compile مرة stripped و مرة unstripped عشان نشوف الفرق 
-- ![](/assets/images/Pasted%20image%2020230706125445.png)
+- ![](/assets/img/images/Pasted%20image%2020230706125445.png)
 زي ما قولنا فعلا الstripped binary طلع مساحته اقل من الunstripped ,بس ده مش مهم اوي عشان نشوف المهم تعالوا نروح علي الdisassembler و المرة دي انا هستخدم ghidra .
 لو فتحنا ghidra و روحنا على المكان الي بيتعرض فيه الfunctions ,في حالة الunstripped هنلاقي الmain function و باقي الfunctions عادي , اما في حالة الstripped مش هنلاقي اسم الmain function او اي اسماء لfunctions تانية, هنلاقي الfunctions بتبدي بأسم `_FUN` زي ما موضح في الصورة : 
-- ![](/assets/images/Pasted%20image%2020230707081446.png)
+- ![](/assets/img/images/Pasted%20image%2020230707081446.png)
 
 هنعرف في الجزء الجي ده ازاي بقى نجيب الmain function لو قابلنا stripped binary 
 
@@ -46,13 +46,13 @@ lang: ar
 ### Method 1 (ghidra) :
 اسهل طريقة تقدر انك تجيب بيها الmain function هي انت تجيب الentrypoint و منها تجيب address الmain عن طريق انك تشوف اولargument في function اسمها `libc_start_main__` . 
 بس ايه هي اصلا الfunction الي اسمها `libc_start_main__` اول function بتشتغل في الentry هي ال__libc_start_main i هي العقل لبرنامج الc الي شغال معانا بتعمل كل حاجة من اول الinitialization لحد الexit و لو شوفنا الdocumentation بتاعها هنلاقي ان اول حاجة بتاخدها هي الaddress بتاع الmain function 
-- ![](/assets/images/Pasted%20image%2020230707080019.png)
+- ![](/assets/img/images/Pasted%20image%2020230707080019.png)
  > entrypoint : الentrypoint هي نقطة البداية للbinary و هي الmemory address الي البرنامج بيبدأ منها  
  
 يلا بقى نكمل مع ghidra عشان نجيب الmain function 
-- ![](/assets/images/Pasted%20image%2020230707080412.png)
+- ![](/assets/img/images/Pasted%20image%2020230707080412.png)
 ولو روحنا للaddress ده فعلا هنلاقي الmain function بتاعتنا و كمان function الي عملناها و استخدمناها في الكود 
-- ![](/assets/images/Pasted%20image%2020230707080631.png)
+- ![](/assets/img/images/Pasted%20image%2020230707080631.png)
 
 ---
 
@@ -62,16 +62,16 @@ lang: ar
 > ايه هو اصلا الsection الي اسمه .text ده ؟ 
 > اي executable بيكون فيه sections و كل section بيكون مسؤول عن شيئ معين زي مثلا ال .text مسؤول انه يشيل الinstruction الي هي الكود او مثلا جزء ال.data مسؤول انه يشيل variables 
 
-- ![](/assets/images/Pasted%20image%2020230707084142.png)
+- ![](/assets/img/images/Pasted%20image%2020230707084142.png)
 
 يلا بقى نرجع علي gdb و نجيب الmain function و ديه الخطوات الي همشي عليها 
 نكتب الامر ده عشان نعرض الsections و الaddresses بتاعتها `info file`
-- ![](/assets/images/Pasted%20image%2020230707085046.png)
+- ![](/assets/img/images/Pasted%20image%2020230707085046.png)
 نجيب الaddress بتاع الtext section و نشوف الinstructions الي فيه عن طريق الامر ده `x/20i <text-section-address`
-- ![](/assets/images/Pasted%20image%2020230707085326.png)
+- ![](/assets/img/images/Pasted%20image%2020230707085326.png)
 ناخذ القيمة الي هتتمرر كargument لlibc_start_main__   (هي ديه الaddress بتاع الmain) و بعدين
 نشوف بقى الmain function بتاعتنا و الfunctions الي كتبناها و استخدمناها 
-- ![](/assets/images/Pasted%20image%2020230707085754.png)
+- ![](/assets/img/images/Pasted%20image%2020230707085754.png)
 ## الخاتمة : 
 و كدة الحمدالله يبقى خلصنا الشرح بتاعنا يارب تكونوا استفدتم لو عندك اي تعليق او شايف حاجة محتاجة تتعدل . 
 
