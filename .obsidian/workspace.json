@@ -80,7 +80,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 200
   },
   "right": {
     "id": "c585bb01a87f49ce",
@@ -173,15 +173,21 @@
   },
   "active": "d1dde2cb74fdb8fb",
   "lastOpenFiles": [
+    "assets/img/images/Pasted image 20260831060329.png",
+    "assets/img/images/Pasted image 20260831055935.png",
+    "_posts/2026-8-31-LD_PRELOAD-Hooking.md",
+    "assets/img/images/ld.png",
+    "assets/img/images/hook.png",
+    "_posts/assets/images/Pasted image 20230604092109.png",
+    "_posts/2023-5-30-PC-Walkthrough.md",
+    "_posts/2023-7-10-Sau-Walkthrough.md",
+    "_posts/2025-2-8-Bomb-Lab-WalkThrough.md",
+    "_posts/2025-6-28-n1njaShop v1.0-Web ChallengeWriteup — ICMTC 2025.md",
     "_posts/2024-11-21-What is PE-1.md",
     "_posts/2023-7-16-Claw.md",
     "_posts/2024-11-18-What is PE?.md",
-    "_posts/2025-2-8-Bomb-Lab-WalkThrough.md",
     "_posts/assets/Untitled.md",
-    "_posts/2023-5-30-PC-Walkthrough.md",
-    "_posts/2026-8-31-LD_PRELOAD-Hooking.md",
     "_tabs/Projects.md",
-    "_posts/2025-6-28-n1njaShop v1.0-Web ChallengeWriteup — ICMTC 2025.md",
     "_site/gitCommands.txt",
     "gitCommands.txt",
     "_site/posts/n1njaShop-v1.0-Web-ChallengeWriteup-ICMTC-2025/index.html",
@@ -190,7 +196,6 @@
     "_site/tags/reverse-engineering",
     "_site/tags/web/index.html",
     "_site/tags/web",
-    "_posts/2023-7-10-Sau-Walkthrough.md",
     "assets/img/images/ictmp2025.jpg"
   ]
 }
