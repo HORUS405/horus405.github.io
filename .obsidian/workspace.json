@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_tabs/Projects.md",
+                "file": "_posts/2026-8-31-LD_PRELOAD-Hooking.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Projects"
+              "title": "2026-8-31-LD_PRELOAD-Hooking"
             }
           }
         ]
@@ -41,7 +41,9 @@
               "type": "file-explorer",
               "state": {
                 "sortOrder": "alphabetical",
-                "autoReveal": false
+                "autoReveal": false,
+                "showSearch": false,
+                "searchQuery": ""
               },
               "icon": "lucide-folder-closed",
               "title": "Files"
@@ -160,6 +162,7 @@
   },
   "left-ribbon": {
     "hiddenItems": {
+      "bases:Create new base": false,
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
       "canvas:Create new canvas": false,
@@ -170,6 +173,14 @@
   },
   "active": "d1dde2cb74fdb8fb",
   "lastOpenFiles": [
+    "_posts/2024-11-21-What is PE-1.md",
+    "_posts/2023-7-16-Claw.md",
+    "_posts/2024-11-18-What is PE?.md",
+    "_posts/2025-2-8-Bomb-Lab-WalkThrough.md",
+    "_posts/assets/Untitled.md",
+    "_posts/2023-5-30-PC-Walkthrough.md",
+    "_posts/2026-8-31-LD_PRELOAD-Hooking.md",
+    "_tabs/Projects.md",
     "_posts/2025-6-28-n1njaShop v1.0-Web ChallengeWriteup — ICMTC 2025.md",
     "_site/gitCommands.txt",
     "gitCommands.txt",
@@ -179,9 +190,7 @@
     "_site/tags/reverse-engineering",
     "_site/tags/web/index.html",
     "_site/tags/web",
-    "_posts/2023-5-30-PC-Walkthrough.md",
     "_posts/2023-7-10-Sau-Walkthrough.md",
-    "_posts/2023-7-16-Claw.md",
     "assets/img/images/ictmp2025.jpg"
   ]
 }
