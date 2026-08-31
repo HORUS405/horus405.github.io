@@ -1,6 +1,6 @@
 ---
 status: publish
-published: true
+published: false
 title: LD_PRELOAD Hooking
 author: horus
 categories:
